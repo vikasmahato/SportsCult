@@ -32,4 +32,21 @@
     </string>
     <string name="title_activity_signup2">Sign Up</string>
     <string name="not_already_a_user">Don\'t have an account? </string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="auth_age_grp">Age Group</string>
+    <string name="next_match">No Upcoming Matches</string>
+    <string name="coach_review">Coach\'s Review</string>
+    <string name="coach_comment">Coach\'s Comment Here</string>
+    <string name="my_video">My Videos</string>
+    <string name="my_rank">Best Rank: 256</string>
+    <string name="ask_info">Add Info</string>
+    <string name="prompt_age_grp">Age Group</string>
+    <string name="prompt_centre_name">Centre Name</string>
+    <string name="prompt_ita_rank">ITA Rank (if any)</string>
+    <string name="choose_sports">Choose your sports</string>
 </resources>
