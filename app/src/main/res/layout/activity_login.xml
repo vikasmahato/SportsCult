@@ -73,7 +73,8 @@
                 android:layout_marginTop="16dp"
                 android:text="@string/sign_in"
                 android:textColor="@android:color/white"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="email_sign_in"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -88,6 +89,7 @@
                     android:layout_margin="@dimen/activity_vertical_margin"
                     android:background="@color/colorPrimaryDark"
                     android:layout_weight="1"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -95,7 +97,9 @@
                     android:color="@color/colorAccent"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                     android:text="@string/or"
-                    android:textStyle="normal|bold" />
+                    android:textStyle="normal|bold"
+                    android:id="@+id/textView2" />
+
                 <View
                     android:layout_margin="@dimen/activity_horizontal_margin"
                     android:layout_width="0dp"
@@ -108,15 +112,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center">
-                <Button
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/facebook_sign_in_button"
+                    android:layout_height="match_parent"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorPrimary"
-                    android:textColor="@android:color/white"
-                    android:text="@string/facebook"/>
+                    android:layout_gravity="center"
+                    />
+                <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/colorPrimary"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:text="@string/facebook"/>-->
 
                 <com.google.android.gms.common.SignInButton
-                    android:id="@+id/sign_in_button"
+                    android:id="@+id/google_sign_in_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"/>
@@ -153,7 +164,10 @@
                     android:layout_height="wrap_content"
                     android:text="@string/btn_sign_up"
                     android:textColor="@color/colorPrimary"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dip"
+                    android:clickable="true"
+                    android:onClick="go_to_sign_up_page"/>
             </LinearLayout>
 
         </LinearLayout>

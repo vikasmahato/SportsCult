@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "69450260336",
+    "firebase_url": "https://sportscult-23955.firebaseio.com",
+    "project_id": "sportscult-23955",
+    "storage_bucket": "sportscult-23955.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69450260336:android:2ce47cfeda96339f",
+        "android_client_info": {
+          "package_name": "in.sportscult.sportscult"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69450260336-oi6n9qjir00i5ghnrr49c5hi72gj6c6u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.sportscult.sportscult",
+            "certificate_hash": "66473f5caa6f9371d2ece45f4649d5c3385ae619"
+          }
+        },
+        {
+          "client_id": "69450260336-rh7k3l0l72p27qa01avs6o8eokbbu7s6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-XjDEcHnN8kR3Rp6IyDoa4zgT9BafFJ0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69450260336-rh7k3l0l72p27qa01avs6o8eokbbu7s6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

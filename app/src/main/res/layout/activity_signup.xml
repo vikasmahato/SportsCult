@@ -40,8 +40,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_name"
-                    android:inputType="textEmailAddress"
-                    android:maxLines="1" />
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:singleLine="true" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -55,7 +56,8 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/prompt_email"
                     android:inputType="textEmailAddress"
-                    android:maxLines="1" />
+                    android:maxLines="1"
+                    android:singleLine="true" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -72,7 +74,8 @@
                     android:imeActionLabel="@string/action_sign_in_short"
                     android:imeOptions="actionUnspecified"
                     android:inputType="textPassword"
-                    android:maxLines="1" />
+                    android:maxLines="1"
+                    android:singleLine="true" />
 
             </android.support.design.widget.TextInputLayout>
             <android.support.design.widget.TextInputLayout
@@ -80,7 +83,7 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:id="@+id/input_password_confirm"
+                    android:id="@+id/password_confirm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_password_confirm"
@@ -88,7 +91,8 @@
                     android:imeActionLabel="@string/action_sign_in_short"
                     android:imeOptions="actionUnspecified"
                     android:inputType="textPassword"
-                    android:maxLines="1" />
+                    android:maxLines="1"
+                    android:singleLine="true" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -101,7 +105,8 @@
                 android:text="@string/btn_sign_up"
                 android:background="@color/colorPrimary"
                 android:textColor="@android:color/white"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="email_sign_up"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -125,28 +130,41 @@
                     android:text="@string/or"
                     android:textStyle="normal|bold" />
                 <View
+                    android:layout_margin="@dimen/activity_horizontal_margin"
                     android:layout_width="0dp"
                     android:layout_height="2dp"
-                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:paddingLeft="@dimen/activity_vertical_margin"
                     android:background="@color/colorPrimaryDark"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="RtlSymmetry" />
             </LinearLayout>
             <android.support.v7.widget.ButtonBarLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorPrimary"
-                    android:textColor="@android:color/white"
-                    android:text="@string/facebook"/>
 
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/facebook_sign_up_button"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    />
+
+                <!--
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorPrimary"
+                                    android:textColor="@android:color/white"
+                                    android:text="@string/facebook"
+                                    android:id="@+id/facebook_dummy" />
+                -->
                 <com.google.android.gms.common.SignInButton
-                    android:id="@+id/sign_in_button"
+                    android:id="@+id/google_sign_up_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"/>
+                    android:layout_centerInParent="true"
+                    />
 
                 <Button
                     android:layout_width="wrap_content"
@@ -169,7 +187,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:gravity="end"
+                    android:gravity="right"
                     android:text="@string/already_a_user"
                     android:textSize="15sp" />
 
@@ -180,7 +198,10 @@
                     android:layout_height="wrap_content"
                     android:text="@string/sign_in"
                     android:textColor="@color/colorPrimary"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:onClick="go_to_sign_in_page"
+                    android:layout_marginLeft="5dip"/>
             </LinearLayout>
 
         </LinearLayout>
